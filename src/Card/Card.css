@@ -19,10 +19,10 @@
     flex-direction: column;
 }
 .glass-card {
-  background: rgba(44, 44, 44, 0.655); /* Casi transparente */
+  background: rgba(44, 44, 44, 0.087); /* Casi transparente */
   backdrop-filter: blur(2px); /* El vidrio esmerilado */
   -webkit-backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+  border: 1px solid rgba(1, 238, 255, 0.241); /* Borde sutil */
   border-radius: 16px;
   padding: 2rem;
   color: white;
@@ -39,5 +39,5 @@
 
 .glass-card:hover {
   transform: translateY(-5px); 
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgb(0, 225, 255);
 }
