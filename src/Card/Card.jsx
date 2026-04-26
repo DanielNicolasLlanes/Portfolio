@@ -9,8 +9,8 @@ const Card = () => {
     <div className="glass-card">
       <div className="card-header">
         <Image/>
-        <div className="header-text">
-          <h1 className='title'>Daniel Llanes</h1>
+        <div className="header-text">  
+          <h1 className='title'>Daniel Nicolás Llanes</h1>
           <p className='text'>Full Stack Developer</p>
         </div>
       </div>

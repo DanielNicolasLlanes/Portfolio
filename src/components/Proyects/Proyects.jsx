@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../Card/Card.css'
 import './Proyects.css'
+import MockupPC from '../MockupPC/MockupPC.jsx'
 
 import { proyects } from './ProyectsRepository.js'
 import { useState } from 'react'
@@ -25,7 +26,7 @@ const Proyects = () => {
   return (
     <div className='glass-card carrousel'>
         <h2>{proyect.title}</h2>
-        <img src={proyect.image} alt={proyect.title} />
+        <MockupPC imageURL={proyect.image} altText={proyect.title} />
         <p>{proyect.description}</p>
         <div className='carrousel-control'>
             <button onClick={prevProyect}>Anterior</button>
