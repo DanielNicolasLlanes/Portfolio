@@ -20,17 +20,19 @@
     flex-direction: column;
 }
 .glass-card {
-  background: rgba(44, 44, 44, 0.087); /* Casi transparente */
+  background: rgba(78, 78, 78, 0.087); /* Casi transparente */
   backdrop-filter: blur(2px); /* El vidrio esmerilado */
   -webkit-backdrop-filter: blur(2px);
   border: 1px solid rgba(1, 238, 255, 0.241); /* Borde sutil */
+  border: 1px solid rgba(146, 146, 146, 0.241); /* Borde sutil */
+
   border-radius: 16px;
   padding: 2rem 6em;
   color: white;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
   transition: transform 0.3s ease, border 0.3s ease;
     
-  margin: 10em auto;
+  margin: 2em auto;
 
   width: 1400px;
   max-width: 1400px;
@@ -41,4 +43,43 @@
 .glass-card:hover {
   transform: translateY(-5px); 
   border: 1px solid rgb(0, 225, 255);
+  border: 1px solid rgb(172, 172, 172);
+
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+}
+.icon{
+    font-size: 2.5em;
+    margin: 0.5em;
+    margin-top: 1em;
+}
+
+.icon.html{
+    color: #E34F26;
+}
+.icon.css{
+    color: #1572B6;
+}
+.icon.js{
+    color: #F7DF1E;
+}
+.icon.react{        
+    color: #61DAFB;
+}
+.icon.node{
+    color: #339933;
+}
+.icon.python{
+    color: #3776AB;
+}
+.icon.github{
+    color: #e0d6d6;
+}
+.icon.angular{
+    color: #DD0031;
 }

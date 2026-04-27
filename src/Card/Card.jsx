@@ -3,6 +3,8 @@ import './Card.css'
 import '../Paragraph/Paragraph.css'
 import Paragraph from '../Paragraph/Paragraph'
 import Image from '../Image/Image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHtml5, faCss3, faJs, faReact, faNode, faPython, faGithub, faAngular} from '@fortawesome/free-brands-svg-icons';
 
 const Card = () => {
   return (
@@ -16,6 +18,17 @@ const Card = () => {
       </div>
       <hr className='line'/>  
       <Paragraph/>
+      <h3>SKILLS</h3>
+        <ul className='skills-list'>
+          <li><FontAwesomeIcon icon={faHtml5} className='icon html'/></li>
+          <li><FontAwesomeIcon icon={faCss3} className='icon css'/></li>
+          <li><FontAwesomeIcon icon={faJs} className='icon js'/></li>
+          <li><FontAwesomeIcon icon={faReact} className='icon react'/></li>
+          <li><FontAwesomeIcon icon={faNode} className='icon node'/></li>
+          <li><FontAwesomeIcon icon={faPython} className='icon python'/></li>
+          <li><FontAwesomeIcon icon={faGithub} className='icon github'/></li>
+          <li><FontAwesomeIcon icon={faAngular} className='icon angular'/></li>
+        </ul>
     </div>
   )
 }

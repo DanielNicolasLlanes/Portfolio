@@ -3,7 +3,7 @@ import './Paragraph.css'
 
 const Paragraph = () => {
   return (
-   <p className='paragraph'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae, nesciunt iusto minima nobis corporis soluta ut rerum dolorem nam facilis eum, earum libero debitis, eligendi quo aut! Laborum aut, officia molestiae, est eos similique consequuntur porro, architecto alias beatae optio quae dolorum tempora autem ipsum neque magni dolor illum.</p>
+   <p className='paragraph'>¡Hola! Soy Daniel. Me especializo en el desarrollo de aplicaciones web donde el diseño y la funcionalidad se encuentran. Me encanta ofrecer soluciones lógicas en React y dar vida a ideas creativas mediante interfaces fluidas, siempre con el objetivo de ofrecer la mejor experiencia posible al usuario. </p>
   )
 }
 

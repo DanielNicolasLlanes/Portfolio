@@ -3,6 +3,9 @@ import '../../Card/Card.css'
 import './Proyects.css'
 import MockupPC from '../MockupPC/MockupPC.jsx'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 import { proyects } from './ProyectsRepository.js'
 import { useState } from 'react'
 
@@ -25,13 +28,18 @@ const Proyects = () => {
 
   return (
     <div className='glass-card carrousel'>
-        <h2>{proyect.title}</h2>
-        <MockupPC imageURL={proyect.image} altText={proyect.title} />
-        <p>{proyect.description}</p>
+        <h2 className='proyect-title'>{proyect.title}</h2>
+            <MockupPC imageURL={proyect.image} altText={proyect.title} />
+            <p>{proyect.description}</p>
         <div className='carrousel-control'>
-            <button onClick={prevProyect}>Anterior</button>
-            <button onClick={nextProyect}>Siguiente</button>
+            <button onClick={prevProyect}>
+                <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+            <button onClick={nextProyect}>
+                <FontAwesomeIcon icon={faChevronRight} />
+            </button>
         </div>
+
     </div>
   )
 }

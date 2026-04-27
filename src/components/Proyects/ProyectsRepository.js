@@ -3,7 +3,7 @@ export const proyects = [
         id: 1,
         title: 'Codearla',
         description: 'Codearla es una plataforma para la comunidad de desarrolladores, donde se comparte el conocimiento y se tratan diferentes tematicas dentro del ambito de software.',
-        image: 'public/codearla.dev_.png'
+        image: 'public/codearla.dev_.webp'
     },
     {
         id: 2,
