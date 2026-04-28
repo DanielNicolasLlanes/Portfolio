@@ -13,18 +13,18 @@ const Starfield = () => {
       p.setup = () => {
         p.createCanvas(p.windowWidth, p.windowHeight).parent(canvasRef.current);
         // Creamos 400 estrellas con posiciones aleatorias
-        for (let i = 0; i < 1000; i++) {
+        for (let i = 0; i < 500; i++) {
           stars.push({
             x: p.random(p.width),
             y: p.random(p.height),
-            size: p.random(1, 5),
+            size: p.random(1, 3),
             opacity: p.random(100, 255)
           });
         }
       };
 
       p.draw = () => {
-        p.background(5, 5, 5); // Negro espacial profundo
+        p.clear(); // Limpiamos el fondo cada frame
         p.noStroke();
 
         stars.forEach(star => {

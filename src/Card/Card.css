@@ -1,85 +1,71 @@
-.title{ 
-    margin: 0;
-    font-size: 3em;
-}
-.text{
-    opacity: 0.7;
-    font-size: 1.5em;
-}
-.line{
-    border: 0.5px solid rgba(255,255,255,0.1);
-    margin: 1rem 0;
+.glass-card {
+  background: rgba(78, 78, 78, 0.087); /* Casi transparente */
+  backdrop-filter: blur(2px); /* El vidrio esmerilado */
+  -webkit-backdrop-filter: blur(2px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  width: 1400px;
+  max-width: 1400px;
+  min-width: 100px;
+  min-height: 600px;
+  margin: 2em auto;
+
+  border-radius: 16px;
+  padding: 2rem 6em;
+  box-shadow: 0 0 30px rgba(0, 242, 255, 0.15);
+
+  color: white;
+  
+  transition: transform 0.3s ease, border 0.3s ease;
 }
 .card-header {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
-.header-text {
+.title{ 
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+}
+.text{
+    opacity: 0.7;
+    font-size: 1.2em;
+}
+.line{
+    border: 0.5px solid rgba(255,255,255,0.1);
+    margin: 1rem 0;
+}
+.header-text-container {
     display: flex;
     flex-direction: column;
 }
-.glass-card {
-  background: rgba(78, 78, 78, 0.087); /* Casi transparente */
-  backdrop-filter: blur(2px); /* El vidrio esmerilado */
-  -webkit-backdrop-filter: blur(2px);
-  border: 1px solid rgba(1, 238, 255, 0.241); /* Borde sutil */
-  border: 1px solid rgba(146, 146, 146, 0.241); /* Borde sutil */
-
-  border-radius: 16px;
-  padding: 2rem 6em;
-  color: white;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
-  transition: transform 0.3s ease, border 0.3s ease;
-    
-  margin: 2em auto;
-
-  width: 1400px;
-  max-width: 1400px;
-  min-width: 100px;
-  min-height: 600px;
-}
-
 .glass-card:hover {
   transform: translateY(-5px); 
-  border: 1px solid rgb(0, 225, 255);
+  border: 1px solid rgb(0, 221, 251);
   border: 1px solid rgb(172, 172, 172);
+  background: linear-gradient(45deg, transparent 45%, rgba(255, 255, 255, 0.05) 50%, transparent 55%);
 
+  background-size: 200% 100%;
+  animation: shimmer 15s linear infinite;
 }
+
+@keyframes shimmer {
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 .skills-list {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     list-style: none;
     padding: 0;
-}
-.icon{
-    font-size: 2.5em;
-    margin: 0.5em;
-    margin-top: 1em;
-}
-
-.icon.html{
-    color: #E34F26;
-}
-.icon.css{
-    color: #1572B6;
-}
-.icon.js{
-    color: #F7DF1E;
-}
-.icon.react{        
-    color: #61DAFB;
-}
-.icon.node{
-    color: #339933;
-}
-.icon.python{
-    color: #3776AB;
-}
-.icon.github{
-    color: #e0d6d6;
-}
-.icon.angular{
-    color: #DD0031;
 }
