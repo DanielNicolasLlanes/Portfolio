@@ -16,7 +16,7 @@
 }
 
 .listItem:hover{
-    background-color: white;
-    color: #000;
+    color: #00DBE7;
     transition: all 0.3s ease;
+    border-bottom: 5px solid #00DBE7;
 }

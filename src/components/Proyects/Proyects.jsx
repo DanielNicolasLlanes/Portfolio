@@ -27,20 +27,27 @@ const Proyects = () => {
 
 
   return (
-    <div className='glass-card carrousel'>
-        <h2 className='proyect-title'>{proyect.title}</h2>
+    <>
+    <div className='proyects-header'>
+        <h2>Proyectos <span className='higthlited'>Seleccionados</span></h2>
+        <p>Coleccion de proyectos destacados, hechos con amor y dedicación</p>
+    </div>
+    <div className='proyects-container'>
+        <button onClick={prevProyect}>
+            <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+        
+        <div className='glass-card carrousel'>
             <MockupPC imageURL={proyect.image} altText={proyect.title} />
+            <h3 className='proyect-title'>{proyect.title}</h3>
             <p>{proyect.description}</p>
-        <div className='carrousel-control'>
-            <button onClick={prevProyect}>
-                <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
+        </div>
+            
             <button onClick={nextProyect}>
                 <FontAwesomeIcon icon={faChevronRight} />
             </button>
-        </div>
-
     </div>
+    </>
   )
 }
 

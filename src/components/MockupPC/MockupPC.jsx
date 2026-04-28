@@ -5,9 +5,7 @@ const MockupPC = ({imageURL, altText}) => {
   return (
 
     <div className='monitor' >
-        <div>
-            <img src={imageURL} alt={altText} />
-        </div>
+      <img src={imageURL} alt={altText} />
     </div>
    
   )
