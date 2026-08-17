@@ -1,3 +1,4 @@
+/*this component is not used yet*/
 import React from 'react'
 import './SkillsList.css'
 

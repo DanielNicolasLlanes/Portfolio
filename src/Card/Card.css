@@ -41,9 +41,9 @@
     flex-direction: column;
 }
 .glass-card:hover {
-  transform: translateY(-5px); 
-  border: 1px solid rgb(0, 221, 251);
-  border: 1px solid rgb(172, 172, 172);
+  /*transform: translateY(-5px); */
+  /*border: 1px solid rgba(0, 222, 251, 0.109);
+  border: 1px solid rgba(172, 172, 172, 0.061);*/
   background: linear-gradient(45deg, transparent 45%, rgba(255, 255, 255, 0.05) 50%, transparent 55%);
 
   background-size: 200% 100%;
