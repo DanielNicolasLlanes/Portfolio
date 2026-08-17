@@ -3,7 +3,7 @@ import './Button-primary.css'
 
 const ButtonPrimary = () => {
   return (
-     <button className='button-primary'>Explorar</button>
+     <button className='button-primary'>Ver sitio</button>
   )
 }
 

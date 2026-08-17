@@ -34,25 +34,9 @@
     font-size: 2em;
     margin-bottom: 0.1em;
 }
-
-.carrousel-control {
+.button-container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-
-.carrousel button {
-    background: transparent;
-    border: 1px solid rgba(255, 0, 183, 0.3);
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.carrousel button:hover {
-    background: rgba(255, 0, 183, 0.3);
-    border: 1px solid rgb(255, 0, 183);
-    color: rgb(255, 255, 255);
-    transform: scale(1.1);
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
 }

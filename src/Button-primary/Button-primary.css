@@ -1,13 +1,17 @@
+
 .button-primary{
-    background-color: rgba(42, 42, 42, 0.877);
+    background: transparent;
     color: rgb(255, 255, 255);
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    border-bottom-right-radius: 20px;
     cursor: pointer;
+    font-size: 0.8rem;
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
-.button-primary:hover{
-    background-color: #fffffff3;
-    color: black;
+.button-primary:hover {
+    background: #646cff5d;
+    border: 1px solid #646cff;
+    color: rgb(255, 255, 255);
 }

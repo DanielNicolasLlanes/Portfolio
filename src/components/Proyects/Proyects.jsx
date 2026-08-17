@@ -26,19 +26,27 @@ const Proyects = () => {
             <MockupPC imageURL={proyect[0].image} altText={proyect[0].title} />
             <h3 className='proyect-title'>{proyect[0].title}</h3>
             <p>{proyect[0].description}</p>
-            <ButtonPrimary/>
+            <div className='button-container'>
+                <ButtonPrimary/>
+            </div>
         </div>
 
          <div className='glass-card carrousel'>
-            <MockupPC imageURL={proyect.image} altText={proyect.title} />
-            <h3 className='proyect-title'>{proyect.title}</h3>
-            <p>{proyect.description}</p>
+            <MockupPC imageURL={proyect[1].image} altText={proyect[1].title} />
+            <h3 className='proyect-title'>{proyect[1].title}</h3>
+            <p>{proyect[1].description}</p>
+            <div className='button-container'>
+                <ButtonPrimary/>
+            </div>
         </div>
 
          <div className='glass-card carrousel'>
-            <MockupPC imageURL={proyect.image} altText={proyect.title} />
-            <h3 className='proyect-title'>{proyect.title}</h3>
-            <p>{proyect.description}</p>
+            <MockupPC imageURL={proyect[2].image} altText={proyect[2].title} />
+            <h3 className='proyect-title'>{proyect[2].title}</h3>
+            <p>{proyect[2].description}</p>
+            <div className='button-container'>
+                <ButtonPrimary/>
+            </div>
         </div>
         
     </div>
